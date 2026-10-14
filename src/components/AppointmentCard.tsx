@@ -41,9 +41,8 @@ export function AppointmentCard({ appointment: a, onAction, index }: Props) {
   return (
     <article
       style={{ animationDelay: `${Math.min(index, 10) * 40}ms` }}
-      className={`group glass relative flex animate-slide-up gap-4 rounded-2xl p-4 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/5 sm:p-5 ${
-        menuOpen ? 'z-20' : ''
-      } ${!isScheduled ? 'opacity-75 hover:opacity-100' : ''}`}
+      className={`group glass relative flex animate-slide-up gap-4 rounded-2xl p-4 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/5 sm:p-5 ${menuOpen ? 'z-20' : ''
+        } ${!isScheduled ? 'opacity-75 hover:opacity-100' : ''}`}
     >
       {/* Data */}
       <div className="flex w-14 shrink-0 flex-col items-center justify-center rounded-xl bg-slate-50 py-2 ring-1 ring-slate-100 sm:w-16">
@@ -129,9 +128,8 @@ function MenuItem({ icon, label, onClick, danger }: { icon: ReactElement; label:
   return (
     <button
       onClick={onClick}
-      className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-medium transition [&>svg]:size-4 ${
-        danger ? 'text-rose-600 hover:bg-rose-50' : 'text-slate-700 hover:bg-slate-50'
-      }`}
+      className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-medium transition [&>svg]:size-4 ${danger ? 'text-rose-700 hover:bg-rose-50' : 'text-slate-700 hover:bg-slate-50'
+        }`}
     >
       {icon}
       {label}
