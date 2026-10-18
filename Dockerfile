@@ -1,6 +1,7 @@
 # =========================================================================
 # Stage 1: Build da aplicação com Node.js Alpine (Multi-stage build)
 # =========================================================================
+# Forçar novo build para apanhar variaveis
 FROM node:22-alpine AS builder
 
 WORKDIR /app
