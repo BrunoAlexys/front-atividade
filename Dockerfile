@@ -7,7 +7,7 @@ FROM node:22-alpine AS builder
 WORKDIR /app
 
 # Variável de build para configurar a URL da API no Vite
-ARG VITE_API_URL
+ARG VITE_API_URL=https://api-agendamentos-latest.onrender.com
 ENV VITE_API_URL=$VITE_API_URL
 
 # Copia apenas os manifestos de dependências para otimizar o cache de camadas
